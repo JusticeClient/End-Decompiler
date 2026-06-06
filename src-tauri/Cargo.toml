@@ -1,6 +1,6 @@
 [package]
 name = "endecompiler"
-version = "0.1.0"
+version = "1.0.0"
 description = "Java decompiler and static malware-analysis tool for Minecraft mod jars"
 authors = ["Endecompiler"]
 edition = "2021"

@@ -1,5 +1,5 @@
 #define AppName "End Decompiler"
-#define AppVer "0.1.0"
+#define AppVer "1.0.0"
 #define AppExe "End Decompiler.exe"
 #define Publisher "End Decompiler"
 

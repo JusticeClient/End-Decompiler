@@ -1,7 +1,7 @@
 {
   "name": "endecompiler",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "A Java decompiler and static malware-analysis tool for inspecting Minecraft mod .jar files.",
   "scripts": {
