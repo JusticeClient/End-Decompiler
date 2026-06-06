@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "evilmod",
+  "version": "1.3.7",
+  "name": "Totally Safe Utilities",
+  "description": "A handy quality-of-life mod. (sample malware fixture)",
+  "authors": ["anon"],
+  "entrypoints": {
+    "main": ["com.evil.TokenGrabber"]
+  },
+  "mixins": ["evilmod.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "~1.20"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "endecompiler",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A Java decompiler and static malware-analysis tool for inspecting Minecraft mod .jar files.",
+  "scripts": {
+    "predev": "node scripts/fetch-decompilers.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/fetch-decompilers.mjs",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "fetch-decompilers": "node scripts/fetch-decompilers.mjs",
+    "gen-icon": "node scripts/gen-icon.mjs"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.7.1",
+    "@codemirror/lang-java": "^6.0.1",
+    "@codemirror/language": "^6.10.8",
+    "@codemirror/search": "^6.5.8",
+    "@codemirror/state": "^6.5.0",
+    "@codemirror/view": "^6.36.1",
+    "@lezer/highlight": "^1.2.1",
+    "@tauri-apps/api": "^2.2.0",
+    "@tauri-apps/plugin-dialog": "^2.2.0",
+    "@tauri-apps/plugin-store": "^2.2.0",
+    "codemirror": "^6.0.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.2.0",
+    "@types/node": "^25.9.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}
