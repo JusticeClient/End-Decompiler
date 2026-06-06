@@ -40,12 +40,11 @@ The Vineflower/CFR jars and the ILSpy decompiler are fetched into `src-tauri/res
 There's a custom Inno Setup installer in `installer/`:
 
 ```
-npm run build
-cd src-tauri && cargo build --release
-cd ../installer && "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" setup.iss
+npm run tauri build
+cd installer && "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" setup.iss
 ```
 
-It packages the exe + decompilers, handles WebView2, and ships a dark themed wizard.
+Use `tauri build`, not a bare `cargo build` — the latter produces a binary that points at the dev server and shows "localhost refused" when run on another machine. The installer packages the exe + decompilers, handles WebView2, and ships a dark themed wizard.
 
 ## Runtime requirements
 
